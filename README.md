@@ -1,36 +1,93 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portofolio
 
-## Getting Started
+Selamat datang di portofolio saya! Ini adalah situs web yang berisi berbagai proyek dan karya yang telah saya kerjakan..
 
-First, run the development server:
+## Fitur
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### 1. **Proyek Web Development**
+   - Situs web yang menampilkan aplikasi web dan proyek pengembangan front-end dan back-end yang saya kerjakan.
+   - Contoh teknologi yang digunakan: React.js, Next.js, Node.js, Express, MongoDB, dll.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 3. **Aplikasi Mobile**
+   - Proyek aplikasi mobile yang saya kembangkan menggunakan teknologi seperti React Native atau Flutter.
+   - Aplikasi ini dapat diunduh dan dicoba di perangkat mobile untuk melihat fungsionalitasnya.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 3. **Data Science & Machine Learning**
+   - Proyek-proyek terkait data science dan machine learning, seperti analisis data, model prediktif, dan visualisasi data menggunakan Python, Pandas, Matplotlib, dll.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Teknologi yang Digunakan
 
-## Learn More
+Berikut adalah beberapa teknologi yang digunakan dalam proyek portofolio ini:
 
-To learn more about Next.js, take a look at the following resources:
+- **Front-End**: React.js, Next.js, HTML5, CSS3, Tailwind CSS, Bootstrap
+- **Back-End**: Node.js, Express.js, MongoDB
+- **Mobile Development**: React Native, Flutter, Kotlin
+- **Data Science**: Python, Pandas, Matplotlib, scikit-learn, Jupyter Notebook
+- **Machine Learning**: Tensorflow
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Instalasi
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Jika Anda ingin mengunduh dan menjalankan portofolio ini secara lokal, ikuti langkah-langkah berikut:
 
-## Deploy on Vercel
+### Prasyarat
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Node.js** (versi 16 atau lebih baru)
+- **npm** atau **yarn** untuk manajemen paket
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Langkah-langkah Instalasi
+
+1. **Clone repositori ini ke komputer Anda**:
+
+   ```bash
+   git clone https://github.com/username/portfolio.git
+   cd portfolio
+   ```
+
+2. **Install dependensi**:
+
+   Gunakan npm atau yarn untuk menginstal dependensi:
+
+   ```bash
+   npm install
+   ```
+
+   atau
+
+   ```bash
+   yarn install
+   ```
+
+3. **Jalankan aplikasi secara lokal**:
+
+   Setelah instalasi selesai, jalankan aplikasi dengan perintah:
+
+   ```bash
+   npm run dev
+   ```
+
+   atau
+
+   ```bash
+   yarn dev
+   ```
+
+   Aplikasi akan berjalan di `http://localhost:3000`.
+
+## Penggunaan
+
+Portofolio ini dirancang untuk memberikan gambaran umum tentang proyek-proyek yang telah saya kerjakan. Beberapa fitur utama yang bisa Anda jelajahi adalah:
+
+- **Halaman Utama**: Menampilkan deskripsi diri dan gambaran umum tentang keterampilan dan keahlian saya.
+- **Proyek**: Koleksi proyek-proyek yang telah saya kerjakan, lengkap dengan deskripsi dan teknologi yang digunakan.
+- **Kontak**: Formulir kontak untuk menghubungi saya atau mengatur kolaborasi.
+
+## Contributing
+
+Saya menyambut kontribusi dari semua orang! Jika Anda ingin berkontribusi pada proyek ini, silakan ikuti langkah-langkah berikut:
+
+1. Fork repositori ini.
+2. Buat branch baru (`git checkout -b feature-nama-fitur`).
+3. Lakukan perubahan yang diinginkan.
+4. Commit perubahan (`git commit -am 'Menambahkan fitur baru'`).
+5. Push ke branch baru (`git push origin feature-nama-fitur`).
+6. Buka pull request di GitHub.
