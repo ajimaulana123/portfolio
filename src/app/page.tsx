@@ -23,158 +23,177 @@ export default function Component() {
     element?.scrollIntoView({ behavior: 'smooth' });
   };
 
-  const certifications = [
+  type Certification = {
+    title: string;
+    provider: string;
+    icon: string;
+    url: string;
+  };
+
+  type Project = {
+    title: string;
+    description: string;
+    tech: string[];
+    github: string;
+    demo?: string; // demo is optional
+    dokumentasi?: string; // dokumentasi is optional
+  };
+
+  type Experience = {
+    year: string;
+    role: string;
+    company: string;
+    description: string;
+    companyUrl: string;
+  };
+
+
+  const certifications: Certification[] = [
     {
-      title: "Google Cloud Engineer",
+      title: "Memulai Dasar Pemrograman untuk Menjadi Pengembang Software",
       provider: "Dicoding Indonesia",
       icon: "/img/dicoding.png",
-      url: "https://www.dicoding.com/certificates/MRZM82ENNZYQ"
+      url: "https://www.dicoding.com/certificates/NVP7Q27G4ZR0"
     },
     {
-      title: "Google Cloud Architect",
+      title: "Pengenalan ke Logika Pemrograman (Programming Logic 101)",
       provider: "Dicoding Indonesia",
       icon: "/img/dicoding.png",
-      url: "https://www.dicoding.com/certificates/98XW23LE9PM3"
+      url: "https://www.dicoding.com/certificates/1RXYL8QYQPVM"
     },
     {
-      title: "Implement Load Balancing",
-      provider: "Cloud Skillboost",
-      icon: "/img/cloud.svg",
-      url: "https://www.cloudskillsboost.google/public_profiles/b08a67fd-635e-45d8-a876-5053c5d14ec8/badges/9240804?utm_medium=social&utm_source=linkedin&utm_campaign=ql-social-share"
+      title: "Belajar Dasar Git dengan GitHub",
+      provider: "Dicoding Indonesia",
+      icon: "/img/dicoding.png",
+      url: "https://www.dicoding.com/certificates/81P2VM38YPOY"
     },
     {
-      title: "Build Real World AI App",
-      provider: "Cloud Skillboost",
-      icon: "/img/cloud.svg",
-      url: "https://www.cloudskillsboost.google/public_profiles/dac03a59-e840-456c-8c3a-ab24175af516/badges/9961848?utm_medium=social&utm_source=linkedin&utm_campaign=ql-social-share"
+      title: "Belajar Analisis Data dengan Python",
+      provider: "Dicoding Indonesia",
+      icon: "/img/dicoding.png",
+      url: "https://www.dicoding.com/certificates/6RPNY6G89Z2M"
     },
     {
-      title: "Go-Lang Basic",
-      provider: "Codepolitan",
-      icon: "/img/codepolitan.png",
-      url: "https://www.codepolitan.com/c/Z9TABD2/"
+      title: "System Administration and IT Infrastructure Services",
+      provider: "Coursera",
+      icon: "/img/coursera.png",
+      url: "https://www.coursera.org/account/accomplishments/verify/EFELCDZETFHS"
     },
     {
-      title: "Database Design",
-      provider: "Oracle",
-      icon: "/img/oracle.png",
-      url: "https://drive.google.com/file/d/1joASiWPjvrfE2fq5affXvwphdpYekj5Y/view"
+      title: "DeepLearning.AI TensorFlow Developer",
+      provider: "Coursera",
+      icon: "/img/coursera.png",
+      url: "https://www.coursera.org/account/accomplishments/specialization/certificate/6LVVPJCAZP7B"
+    },
+
+
+  ];
+
+  const projects: Project[] = [
+    {
+      title: "Indovel",
+      description: "Indovel adalah start-up yang berjalan untuk menyediakan lapak bagi siapapun yang ingin menjual novel. Kami hadir karena kurangnya minat baca pada remaja sekarang",
+      tech: ["Boostrapt"],
+      github: "https://github.com/ajimaulana123/Indovel",
+      demo: "https://rickyricko302.github.io/Indovel/"
     },
     {
-      title: "Intermediate Multimedia Designer",
-      provider: "BNSP",
-      icon: "/img/BNSP.png",
-      url: "https://drive.google.com/file/d/10gSBByxLpIJvA0y1vcN74GCFyKzLdeKc/view"
+      title: "Analaisi Dataset Bike Sharing dengan Python",
+      description: "Menganalisis data pada Bike Sharing Dataset dengan tujuan untuk memahami berapa banyak dan sedikit penyewaan sepeda didasarkan pada waktu dan musim.",
+      tech: ["Python", "numpy", "pandas"],
+      github: "https://github.com/ajimaulana123/bike-sharing-data-analis",
+      demo: "https://8f88lbtrdjjbfu7fmp8pgh.streamlit.app/"
     },
     {
-      title: "Click Me For More Certifications",
-      provider: "Linkedin",
-      icon: "/img/LinkedIn.png",
-      url: "https://www.linkedin.com/in/luqman-aldi/details/certifications/"
-    },
-  ];  
-  
-  const projects = [
-    {
-      title: "solifess",
-      description: "Menfess that can send a song for Polines people. github is private for security purpose.",
-      tech: ["Javascript", "React", "Next", "Tailwind", "Shadcn", "Postgresql"],
-      demo: "https://www.solifess.fun/"
+      title: "Analaisi Dataset Bike Sharing dengan Python",
+      description: "Menganalisis data pada Bike Sharing Dataset dengan tujuan untuk memahami berapa banyak dan sedikit penyewaan sepeda didasarkan pada waktu dan musim.",
+      tech: ["Python", "numpy", "pandas"],
+      github: "https://github.com/ajimaulana123/bike-sharing-data-analis",
+      demo: "https://8f88lbtrdjjbfu7fmp8pgh.streamlit.app/"
     },
     {
-      title: "BeliJasa.com",
-      description: "local marketplace for buying and selling services",
-      tech: ["MangoDB", "Express", "React", "Node.js"],
-      github: "https://github.com/HengkerKucing/belijasa.git",
-      dokumentasi: "https://docs.google.com/document/d/1b0fteH99bMJiRPfwAoUHEdANIE-LwFOxK7EK9KI1Dts/edit?usp=sharing"
+      title: "EsTeh",
+      description: "Jasa pembuatan web EsTeh",
+      tech: ["Next.Js"],
+      github: "https://github.com/ajimaulana123/estech",
+      demo: "https://estech.vercel.app/"
     },
     {
-      title: "CCTV Analytic",
-      description: "a web for counting vehicle and analytics. this project is private because NDA (Non-Disclosure Agreement). I can show the code in limited places",
-      tech: ["Golang", "React", "PostgreSQL"],
-      demo: "https://mam.jogjaprov.go.id/"
+      title: "API Blind Code",
+      description: "Open API komunitas Blind Code",
+      tech: ["Express Js", "MySQL"],
+      github: "https://github.com/ajimaulana123/api-blind-code"
     },
     {
-      title: "Kamus Gen-Z API",
-      description: "Open-Source project from IMPHEN",
-      tech: ["Javascript", "SQLite", "Prisma"],
-      github: "https://github.com/IMPHNEN/kamus-gen-z-api.git",
-      demo: "https://kamusgenz.vercel.app/"
+      title: "Admin Akreditasi",
+      description: "Menyediakan platform yang efisien dalam pengelolaan data akreditasi untuk Jurusan Manajemen Informatika",
+      tech: ["Express Js", "React Js"],
+      github: "https://github.com/ajimaulana123/admin-akreditasi",
+      demo: "https://admin-akreditasi.vercel.app/"
     },
     {
-      title: "Admin-Reviewer Module",
-      description: "project admin and reviewer for SIPMAS (Research and Community Service Information System)",
-      tech: ["Laravel", "MySQL"],
-      github: "https://github.com/HengkerKucing/AdminReviewer-Module.git",
-      dokumentasi: "https://docs.google.com/document/d/1T1gPkAoQ5pxwV4HXsPok4jD3Zn8eqVIep2cKJLAbmkY/edit?usp=sharing"
+      title: "HMJ MI",
+      description: "Memperkenalkan dan mengorganisir berbagai kegiatan serta informasi penting bagi mahasiswa jurusan Manajemen Informatika",
+      tech: ["Bootstrapt"],
+      github: "https://github.com/ajimaulana123/HMJ-MI-v2",
+      demo: "https://tamakuz.github.io/HMJ-MI-Project/"
     },
     {
-      title: "Personal Website V1",
-      description: "Personal Website for portofolio",
-      tech: ["HTML", "TailwindCSS", "JavaScript"],
-      github: "https://github.com/HengkerKucing/web_aldi_tailwindcss.git",
-      demo: "https://porto-aldi-v1.vercel.app/"
+      title: "Blind Code",
+      description: "Mengembangkan pengetahuan kita terkait Frontend Development",
+      tech: ["Html", "CSS", "Js"],
+      github: "https://github.com/ajimaulana123/blind-code-web-profile",
+      demo: "https://mancode77.github.io/frontend-dev-portofolio/"
     },
     {
-      title: "Bread E-Commerce",
-      description: "Mobile E-Commerce for selling bread, this project when I test for BNSP Junior Mobile Programmer",
-      tech: ["Dart", "Flutter", "PHP", "MySQL"],
-      github: "https://github.com/HengkerKucing/Mobile_Roti_BNSP.git",
+      title: "Akreditasi MI",
+      description: "Menyediakan platform yang efisien dalam pengelolaan data akreditasi untuk Jurusan Manajemen Informatika",
+      tech: ["Express Js", "React Js"],
+      github: "https://github.com/ajimaulana123/akreditasi-mi",
+      demo: "https://akreditasi-6c3jsmx6f-tamakuz.vercel.app/"
     },
     {
-      title: "Random Pokemon Generator",
-      description: "Website for generate a random pokemon with beatiful card",
-      tech: ["HTML", "CSS", "JavaScript"],
-      github: "https://github.com/HengkerKucing/Pokemon-generator.git",
-      demo: "https://pokemon-generator-vert.vercel.app/"
+      title: "HOFE",
+      description: "Aplikasi deteksi Hoax artikel",
+      tech: ["Tensorflow", "Google Cloud", "Kotlin"],
+      github: "https://github.com/ajimaulana123/HOFE-hoax-detection-for-everyone",
     },
     {
-      title: "Cloud Architecture for E-Commerce",
-      description: "Cloud Architecture for mini E-Commerce",
-      tech: ["GCP", "Load Balancing", "VPC", "Cloud NAT", "Cloud Firewall"],
-      dokumentasi: "https://docs.google.com/document/d/1IF4Q9_a69_dID79hkL42yA-kwU6KLWWqg-_B50Qsonw/edit?usp=sharing"
-    },
-    {
-      title: "Deploy App using App Engine",
-      description: "Deploy Money Tracker App using App Engine",
-      tech: ["GCP", "App Engine", "Cloud SQL", "Cloud Storage Bucket"],
-      dokumentasi: "https://docs.google.com/document/d/1HuGqJYvXdrfaiDM2oGIZd8Y2sToz4dpYrLI5osO7oUo/edit?usp=sharing"
-    },
-    {
-      title: "Deploy App using Kubernetes Engine",
-      description: "Deploy Notes App using Kubernetes Engine on GCP",
-      tech: ["GCP", "GKE", "Artifact Registry"],
-      dokumentasi: "https://docs.google.com/document/d/1VAGhq8HOpWxggv1TZiJ1KCQSzwVkNM8MOWd8SJbYT50/edit?usp=sharing"
-    },
-    {
-      title: "Zombie Apocalypse",
-      description: "Game Zombie",
-      tech: ["Unity"],
-      dokumentasi: "https://docs.google.com/document/d/1VC1sl7yZuRWtQYk9f8W7Mt9AFH6L-XoaevMyDavDH_E/edit?usp=sharing"
+      title: "Simple Microservice Architercture",
+      description: "Membangun dan mengelola beberapa microservices sederhana menggunakan Docker dan Nginx sebagai reverse proxy",
+      tech: ["Docker", "Nginx", "Express Js"],
+      github: "https://github.com/ajimaulana123/microservice-be",
     },
   ]
 
-  const experiences = [
+  const experiences: Experience[] = [
     {
       year: "2024",
-      role: "Backend Developer Intern (MSIB)",
-      company: "Dinas Kominfo DIY",
-      description: "Working on project CCTV Analytic",
-      companyUrl: "https://diskominfo.jogjaprov.go.id/"
+      role: "Machine Learning path (MSIB)",
+      company: "Bangkit Academy",
+      description: "Analisis data, Membuat model, Mendeploy model",
+      companyUrl: "https://grow.google/intl/id_id/bangkit/"
     },
     {
-      year: "2023",
-      role: "Media Creative",
-      company: "Google Developer Students Club",
-      description: "Make poster and feed",
-      companyUrl: "https://www.instagram.com/gdsc.polines/"
+      year: "2024",
+      role: "JuaraGCP Participant",
+      company: "Google Cloud Skills Boost",
+      description: "Event AI",
+      companyUrl: "https://www.cloudskillsboost.google/"
     },
     {
-      year: "2022",
-      role: "Graduate",
-      company: "From High School",
-      description: "",
-      companyUrl: ""
+      year: "2024",
+      role: "Cloud Computing learning path (MSIB)",
+      company: "Bangkit Academy",
+      description: "Mendeploy API dengan layanan Google Cloud",
+      companyUrl: "https://grow.google/intl/id_id/bangkit/"
+    },
+    {
+      year: "2023 - 2024",
+      role: "Fullstack Web Dev",
+      company: "Politama",
+      description: "Membuat Web Akreditasi MI",
+      companyUrl: "politama.ac.id"
     },
   ]
 
@@ -224,7 +243,7 @@ export default function Component() {
         <section className="py-8 border-t border-white/10">
           <h2 className={`text-xl sm:text-2xl font-bold mb-4 ${underlinedHeading}`}>Technical Skills</h2>
           <div className="flex flex-wrap gap-2">
-            {["Laravel", "Next.Js", "Tensorflow"].map((skill) => (
+            {["Laravel", "Next.Js", "Tensorflow", "Docker", "Linux"].map((skill) => (
               <div
                 key={skill}
                 className="bg-white/10 text-white px-3 py-1 text-sm rounded-md hover:bg-white hover:text-black transition-colors"
@@ -238,21 +257,21 @@ export default function Component() {
         {/* Certifications Section */}
         <section className="py-8 border-t border-white/10">
           <h2 className={`text-xl sm:text-2xl font-bold mb-4 ${underlinedHeading}`}>Certifications</h2>
-          {/*<div className="grid gap-4 sm:grid-cols-3">
+          <div className="grid gap-4 sm:grid-cols-3">
             {certifications.slice(0, showAllCertifications ? certifications.length : 3).map((cert, index) => (
-              <a 
-                href={cert.url} 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                key={index} 
+              <a
+                href={cert.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                key={index}
                 className="no-underline"
               >
                 <Card className="bg-white/5 border-white/10 flex flex-row items-center p-4 hover:bg-white/10 transition-colors cursor-pointer">
-                  <Image 
-                    src={cert.icon} 
-                    alt={cert.provider} 
-                    width={40} 
-                    height={40} 
+                  <Image
+                    src={cert.icon}
+                    alt={cert.provider}
+                    width={40}
+                    height={40}
                     className="mr-4"
                   />
                   <div>
@@ -281,14 +300,13 @@ export default function Component() {
                 )}
               </Button>
             </div>
-          )}*/}
-          <p>Coming soon</p>
+          )}
         </section>
 
         {/* Projects Section */}
         <section id="projects" className="py-8 border-t border-white/10">
           <h2 className={`text-xl sm:text-2xl font-bold mb-4 ${underlinedHeading}`}>Featured Projects</h2>
-         {/* <div className="grid gap-4 sm:grid-cols-2">
+          <div className="grid gap-4 sm:grid-cols-2">
             {projects.slice(0, showAllProjects ? projects.length : 2).map((project, index) => (
               <Card key={index} className="bg-white/5 border-white/10">
                 <CardHeader className="pb-2">
@@ -303,30 +321,30 @@ export default function Component() {
                       </Badge>
                     ))}
                   </div>
-                    <div className="flex gap-2">
-                      {project.github && (
-                        <Link href={project.github} target="_blank" rel="noopener noreferrer">
-                          <Button variant="outline" size="sm">
-                            <Github className="w-4 h-4 mr-1" />
-                            Code
-                          </Button>
-                        </Link>
-                      )}
-                      {project.demo && (
-                        <Link href={project.demo} target="_blank" rel="noopener noreferrer">
-                          <Button variant="outline" size="sm">
-                            Live Demo
-                          </Button>
-                        </Link>
-                      )}
-                      {project.dokumentasi && (
-                        <Link href={project.dokumentasi} target="_blank" rel="noopener noreferrer">
-                          <Button variant="outline" size="sm">
-                            Dokumentasi
-                          </Button>
-                        </Link>
-                      )}
-                    </div>
+                  <div className="flex gap-2">
+                    {project.github && (
+                      <Link href={project.github} target="_blank" rel="noopener noreferrer">
+                        <Button variant="outline" size="sm">
+                          <Github className="w-4 h-4 mr-1" />
+                          Code
+                        </Button>
+                      </Link>
+                    )}
+                    {project.demo && (
+                      <Link href={project.demo} target="_blank" rel="noopener noreferrer">
+                        <Button variant="outline" size="sm">
+                          Live Demo
+                        </Button>
+                      </Link>
+                    )}
+                    {project.dokumentasi && (
+                      <Link href={project.dokumentasi} target="_blank" rel="noopener noreferrer">
+                        <Button variant="outline" size="sm">
+                          Dokumentasi
+                        </Button>
+                      </Link>
+                    )}
+                  </div>
                 </CardContent>
               </Card>
             ))}
@@ -349,14 +367,13 @@ export default function Component() {
                 )}
               </Button>
             </div>
-          )}*/}
-          <p>Coming soon</p>
+          )}
         </section>
 
         {/* Experience Section */}
         <section id="experience" className="py-8 border-t border-white/10">
           <h2 className={`text-xl sm:text-2xl font-bold mb-4 ${underlinedHeading}`}>Experience</h2>
-          {/*<div className="grid gap-6">
+          <div className="grid gap-6">
             {experiences.slice(0, showAllExperience ? experiences.length : 2).map((exp, index) => (
               <div key={index} className="grid sm:grid-cols-[140px,1fr] gap-2">
                 <div className="text-sm text-muted-foreground">{exp.year}</div>
@@ -389,39 +406,37 @@ export default function Component() {
                 )}
               </Button>
             </div>
-          )}*/}
-          <p>Coming soon</p>
+          )}
         </section>
 
         {/* Get in Touch Section */}
         <section id="contact" className="py-8 border-t border-white/10">
           <h2 className={`text-xl sm:text-2xl font-bold mb-4 ${underlinedHeading}`}>Get In Touch</h2>
-         {/* <div className="flex flex-col items-center gap-4">
+          <div className="flex flex-col items-center gap-4">
             <p className="text-base text-white text-center max-w-xl">
               I&apos;m always interested in hearing about new projects and opportunities. Feel free to reach out!
             </p>
             <div className="flex flex-wrap justify-center gap-3">
-              <Link href="mailto:luqmanaldp@gmail.com">
+              <Link href="mailto:aji658911@gmail.com">
                 <Button variant="outline" size="sm" className="bg-white/10 hover:bg-white hover:text-black transition-colors">
                   <Mail className="w-4 h-4 mr-2" />
                   Email Me
                 </Button>
               </Link>
-              <Link href="https://linkedin.com/in/luqman-aldi/" target="_blank" rel="noopener noreferrer">
+              <Link href="https://www.linkedin.com/in/aji-maulana-0bb20921b/" target="_blank" rel="noopener noreferrer">
                 <Button variant="outline" size="sm" className="bg-white/10 hover:bg-white hover:text-black transition-colors">
                   <Linkedin className="w-4 h-4 mr-2" />
                   LinkedIn
                 </Button>
               </Link>
-              <Link href="https://github.com/HengkerKucing" target="_blank" rel="noopener noreferrer">
+              <Link href="https://github.com/ajimaulana094@gmail.com" target="_blank" rel="noopener noreferrer">
                 <Button variant="outline" size="sm" className="bg-white/10 hover:bg-white hover:text-black transition-colors">
                   <Github className="w-4 h-4 mr-2" />
                   GitHub
                 </Button>
               </Link>
             </div>
-          </div>*/}
-          <p>Coming soon</p>
+          </div>
         </section>
 
         {/* Footer */}
@@ -431,7 +446,7 @@ export default function Component() {
           </p>
           <nav className="mt-3">
             <ul className="flex justify-center space-x-4">
-              {/* <li>
+              <li>
                 <Link href="/privacy-policy" className="text-sm text-muted-foreground hover:text-white transition-colors">
                   Privacy Policy
                 </Link>
@@ -440,7 +455,7 @@ export default function Component() {
                 <Link href="/terms-of-service" className="text-sm text-muted-foreground hover:text-white transition-colors">
                   Terms of Service
                 </Link>
-              </li> */}
+              </li>
             </ul>
           </nav>
         </footer>
