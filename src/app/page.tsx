@@ -90,6 +90,13 @@ export default function Component() {
   ];
 
   const projects: Project[] = [
+     {
+      title: "Meida Editor",
+      description: "Aplikasi berbasis web untuk memproses berbagai jenis media.",
+      tech: ["Next.Js 14", "Shadcn UI"],
+      github: "https://github.com/ajimaulana123/media-editor",
+      demo: "https://media-editor-bay.vercel.app/"
+    },
     {
       title: "Indovel",
       description: "Indovel adalah start-up yang berjalan untuk menyediakan lapak bagi siapapun yang ingin menjual novel. Kami hadir karena kurangnya minat baca pada remaja sekarang",
