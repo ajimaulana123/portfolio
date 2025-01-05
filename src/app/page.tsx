@@ -112,13 +112,6 @@ export default function Component() {
       demo: "https://8f88lbtrdjjbfu7fmp8pgh.streamlit.app/"
     },
     {
-      title: "Analaisi Dataset Bike Sharing dengan Python",
-      description: "Menganalisis data pada Bike Sharing Dataset dengan tujuan untuk memahami berapa banyak dan sedikit penyewaan sepeda didasarkan pada waktu dan musim.",
-      tech: ["Python", "numpy", "pandas"],
-      github: "https://github.com/ajimaulana123/bike-sharing-data-analis",
-      demo: "https://8f88lbtrdjjbfu7fmp8pgh.streamlit.app/"
-    },
-    {
       title: "EsTeh",
       description: "Jasa pembuatan web EsTeh",
       tech: ["Next.Js"],
@@ -130,13 +123,6 @@ export default function Component() {
       description: "Open API komunitas Blind Code",
       tech: ["Express Js", "MySQL"],
       github: "https://github.com/ajimaulana123/api-blind-code"
-    },
-    {
-      title: "Admin Akreditasi",
-      description: "Menyediakan platform yang efisien dalam pengelolaan data akreditasi untuk Jurusan Manajemen Informatika",
-      tech: ["Express Js", "React Js"],
-      github: "https://github.com/ajimaulana123/admin-akreditasi",
-      demo: "https://admin-akreditasi.vercel.app/"
     },
     {
       title: "HMJ MI",
