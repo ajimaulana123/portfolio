@@ -91,3 +91,7 @@ Saya menyambut kontribusi dari semua orang! Jika Anda ingin berkontribusi pada p
 4. Commit perubahan (`git commit -am 'Menambahkan fitur baru'`).
 5. Push ke branch baru (`git push origin feature-nama-fitur`).
 6. Buka pull request di GitHub.
+
+# Referensi
+
+Saya lupa dari mana referensi ini, tapi saya ambil dari salah satu teman saya Fesnuk
