@@ -94,4 +94,4 @@ Saya menyambut kontribusi dari semua orang! Jika Anda ingin berkontribusi pada p
 
 # Referensi
 
-Saya lupa dari mana referensi ini, tapi saya ambil dari salah satu teman saya Fesnuk
+Saya lupa dari mana referensi ini, tapi saya ambil dari salah satu teman saya di Fesnuk
