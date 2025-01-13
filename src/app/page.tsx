@@ -155,7 +155,8 @@ export default function Component() {
       title: "HOFE Website",
       description: "HOFE Website adalah sebuah aplikasi yang dirancang untuk mendeteksi hoax pada artikel berbasis teks dan url",
       tech: ["Astro"],
-      github: "https://official-hofe-website.vercel.app",
+      github: "https://github.com/ajimaulana123/official-HOFE-website,
+      demo: "https://official-hofe-website.vercel.app",
     },
     {
       title: "Simple Microservice Architercture",
