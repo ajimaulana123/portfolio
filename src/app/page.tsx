@@ -152,6 +152,12 @@ export default function Component() {
       github: "https://github.com/ajimaulana123/HOFE-hoax-detection-for-everyone",
     },
     {
+      title: "HOFE Website",
+      description: "HOFE Website adalah sebuah aplikasi yang dirancang untuk mendeteksi hoax pada artikel berbasis teks dan url",
+      tech: ["Astro"],
+      github: "https://official-hofe-website.vercel.app",
+    },
+    {
       title: "Simple Microservice Architercture",
       description: "Membangun dan mengelola beberapa microservices sederhana menggunakan Docker dan Nginx sebagai reverse proxy",
       tech: ["Docker", "Nginx", "Express Js"],
