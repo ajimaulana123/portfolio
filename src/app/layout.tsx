@@ -15,8 +15,8 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Portofolio",
-  description: "Simple protofolio",
+  title: "Aji Maulana",
+  description: "Portofolio profesional Aji Maulana: Pengembang web, ahli cloud computing, dan spesialis machine learning. Temukan proyek, pengalaman, dan keahlian saya di bidang pengembangan aplikasi, machine learning, dan teknologi cloud.",
 };
 
 export default function RootLayout({
