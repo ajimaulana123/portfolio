@@ -91,11 +91,11 @@ export default function Component() {
 
   const projects: Project[] = [
      {
-      title: "Meida Editor",
-      description: "Aplikasi berbasis web untuk memproses berbagai jenis media.",
-      tech: ["Next.Js 14", "Shadcn UI"],
-      github: "https://github.com/ajimaulana123/media-editor",
-      demo: "https://media-editor-bay.vercel.app/"
+      title: "SIM",
+      description: "Sistem manajemen barang produksi",
+      tech: ["Next.Js", "Radix UI"],
+      github: "https://github.com/ajimaulana123/sistem-manajemen-produksi-barang",
+      demo: "https://sistem-manajemen-produksi-barang.vercel.app/"
     },
     {
       title: "Indovel",
