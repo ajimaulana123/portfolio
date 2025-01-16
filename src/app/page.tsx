@@ -91,6 +91,13 @@ export default function Component() {
 
   const projects: Project[] = [
      {
+      title: "HOFE Website",
+      description: "HOFE Website adalah sebuah aplikasi yang dirancang untuk mendeteksi hoax pada artikel berbasis teks dan url",
+      tech: ["Astro"],
+      github: "https://github.com/ajimaulana123/official-HOFE-website",
+      demo: "https://official-hofe-website.vercel.app",
+    },
+     {
       title: "SIM",
       description: "Sistem manajemen barang produksi",
       tech: ["Next.Js", "Radix UI"],
@@ -103,6 +110,12 @@ export default function Component() {
       tech: ["Boostrapt"],
       github: "https://github.com/ajimaulana123/Indovel",
       demo: "https://rickyricko302.github.io/Indovel/"
+    },
+     {
+      title: "HOFE",
+      description: "Aplikasi deteksi Hoax artikel",
+      tech: ["Tensorflow", "Google Cloud", "Kotlin"],
+      github: "https://github.com/ajimaulana123/HOFE-hoax-detection-for-everyone",
     },
     {
       title: "Analaisi Dataset Bike Sharing dengan Python",
@@ -144,19 +157,6 @@ export default function Component() {
       tech: ["Express Js", "React Js"],
       github: "https://github.com/ajimaulana123/akreditasi-mi",
       demo: "https://akreditasi-6c3jsmx6f-tamakuz.vercel.app/"
-    },
-    {
-      title: "HOFE",
-      description: "Aplikasi deteksi Hoax artikel",
-      tech: ["Tensorflow", "Google Cloud", "Kotlin"],
-      github: "https://github.com/ajimaulana123/HOFE-hoax-detection-for-everyone",
-    },
-    {
-      title: "HOFE Website",
-      description: "HOFE Website adalah sebuah aplikasi yang dirancang untuk mendeteksi hoax pada artikel berbasis teks dan url",
-      tech: ["Astro"],
-      github: "https://github.com/ajimaulana123/official-HOFE-website",
-      demo: "https://official-hofe-website.vercel.app",
     },
     {
       title: "Simple Microservice Architercture",
