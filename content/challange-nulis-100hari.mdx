@@ -1,0 +1,117 @@
+---
+title: "Hari 10: Visualisasi Data dengan Matplotlib dan Seaborn (Bagian 1)"
+publishedAt: "2025-01-22"
+summary: "My first post on my new blog."
+---
+
+# Belajar Visualisasi Data dengan Matplotlib dan Seaborn
+
+Kita udah belajar pake Pandas, sekarang kita bakal belajar Visualisasi Data pake Matplotlib dan Seaborn. Visualisasi itu penting banget buat bikin data kita gampang dipahami, baik untuk analisis sendiri ataupun presentasi ke orang lain. Let's go!
+
+## 1. Kenalan ama Matplotlib
+Matplotlib itu library dasar buat bikin grafik di Python.
+
+### a. Membuat Line Plot
+Line plot dipakai buat ngeliat tren data.
+
+```python
+import matplotlib.pyplot as plt
+
+# Data dummy
+hari = ['Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat']
+penjualan = [100, 150, 300, 200, 250]
+
+# Bikin line plot
+plt.plot(hari, penjualan, color='blue', marker='o', linestyle=' - ')
+plt.title("Penjualan Harian") # Judul
+plt.xlabel("Hari") # Label X
+plt.ylabel("Jumlah Penjualan") # Label Y
+plt.show()
+
+
+📌 Artinya:
+
+- `plt.plot`: Bikin grafik garis.
+- `color`: Warna garis.
+- `marker`: Titik pada data.
+- `linestyle`: Gaya garis, seperti `—`, `-`, atau `:`.
+
+### b. Membuat Bar Plot
+Bar plot cocok buat data kategorikal, seperti penjualan per hari.
+
+```python
+# Bikin bar plot
+plt.bar(hari, penjualan, color='orange')
+plt.title("Penjualan Harian (Bar Plot)")
+plt.xlabel("Hari")
+plt.ylabel("Jumlah Penjualan")
+plt.show()
+```
+
+### c. Membuat Scatter Plot
+Scatter plot digunakan untuk melihat hubungan antara dua variabel.
+
+```python
+# Data dummy
+harga = [1000, 2000, 3000, 4000, 5000]
+jumlah_terjual = [50, 70, 60, 90, 100]
+
+# Bikin scatter plot
+plt.scatter(harga, jumlah_terjual, color='red')
+plt.title("Hubungan Harga vs Jumlah Terjual")
+plt.xlabel("Harga")
+plt.ylabel("Jumlah Terjual")
+plt.show()
+```
+
+📌 Artinya:
+
+- `plt.scatter`: Bikin grafik titik.
+
+## 2. Membuat Grafik Penyebaran Data dengan Seaborn
+Seaborn bikin grafik penyebaran data jadi lebih gampang dan terlihat lebih estetik.
+
+### a. Histogram
+Histogram digunakan untuk melihat penyebaran data (seberapa sering nilai tertentu muncul).
+
+```python
+import seaborn as sns
+
+# Data dummy
+data_penjualan = [100, 150, 200, 250, 300, 350, 300, 250, 200, 150]
+
+# Bikin histogram
+sns.histplot(data_penjualan, bins=5, kde=False, color='green')
+plt.title("Penyebaran Penjualan")
+plt.xlabel("Jumlah Penjualan")
+plt.ylabel("Frekuensi")
+plt.show()
+```
+
+📌 Artinya:
+
+- `sns.histplot`: Bikin histogram.
+- `bins`: Jumlah interval.
+- `kde=False`: Matikan garis density.
+
+### b. KDE Plot
+KDE (Kernel Density Estimation) digunakan untuk melihat penyebaran data dalam bentuk kurva halus.
+
+```python
+# Bikin KDE plot
+sns.kdeplot(data_penjualan, shade=True, color='purple')
+plt.title("Penyebaran Penjualan (KDE)")
+plt.xlabel("Jumlah Penjualan")
+plt.ylabel("Density")
+plt.show()
+```
+
+📌 Artinya:
+
+- `shade=True`: Area di bawah kurva diwarnai.
+
+## Kesimpulan
+- **Matplotlib**: Itu dasar buat visualisasi data seperti line, bar, dan scatter plot.
+- **Seaborn**: Membuat visualisasi lebih smooth dan stylish, seperti histogram dan KDE plot.
+
+#100HariNulis #Day10 #MachineLearning
