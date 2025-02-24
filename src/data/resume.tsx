@@ -15,8 +15,10 @@ export const DATA = {
   skills: [
     "Node.js",
     "Express.js",
+    "Tailwaind",
     "React",
     "Next.js",
+    "Laravel",
     "Tensorflow",
     "Google Cloud Platform"
   ],
@@ -59,6 +61,18 @@ export const DATA = {
   },
 
   work: [
+    {
+      company: "PT. Prima Paper Indonesia",
+      href: "https://company-profile-production-69d6.up.railway.app/",
+      badges: [],
+      location: "Hybrid",
+      title: "Company Profile & System Management HRD",
+      logoUrl: "https://bursakerja.jatengprov.go.id/assets/images/penyedias/PAS_44670f0fc6a813f4523459a71e81b885.jpg",
+      start: "1 Februari 2025",
+      end: "1 Juli 2025",
+      description:
+        "Membangun, mengembangkan, dan memantau website Company Profile & System Management HRD.",
+    },
     {
       company: "Akreditasi Kampus",
       href: "http://politama.ac.id/",
@@ -119,6 +133,88 @@ export const DATA = {
     }
   ],
   projects: [
+    {
+      title: "UMKM Karak",
+      href: "https://karak-iota.vercel.app/",
+      dates: "1 Februari - Present",
+      active: true,
+      description:
+        "Dengan adanya website, pelaku UMKM dapat memperkenalkan produk atau layanan mereka kepada pasar yang lebih luas tanpa terbatas oleh lokasi geografis. Selain itu, website memudahkan pelanggan dalam mencari informasi, melakukan transaksi, serta berkomunikasi langsung dengan pemilik usaha. Fitur seperti katalog produk, sistem pemesanan online, dan integrasi dengan media sosial juga membantu meningkatkan penjualan serta memperkuat branding UMKM. Dengan pemanfaatan website yang optimal, UMKM dapat lebih efisien dalam pemasaran, membangun kepercayaan pelanggan, dan bersaing di pasar digital secara lebih profesional.",
+      technologies: [
+        "Next.Js",
+        "Tailwind"
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://karak-iota.vercel.app/",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/umkm.png",
+      video: "",
+    },
+    {
+      title: "PPID Surakarta",
+      href: "https://ppid-solo.vercel.app/",
+      dates: "1 Februari - Present",
+      active: true,
+      description:
+        "meningkatkan transparansi dan aksesibilitas informasi bagi masyarakat. Dengan adanya website, warga dapat dengan mudah memperoleh informasi publik secara cepat dan akurat tanpa harus datang langsung ke kantor PPID. Website ini juga membantu meningkatkan efisiensi dalam pengelolaan permohonan informasi, menyediakan data secara real-time, serta mendukung partisipasi masyarakat dalam pengawasan kebijakan pemerintah. Selain itu, keberadaan website memperkuat akuntabilitas pemerintah daerah dengan memastikan bahwa informasi yang disajikan selalu up-to-date, dapat diakses kapan saja, dan sesuai dengan prinsip keterbukaan informasi publik.",
+      technologies: [
+        "Next.Js",
+        "Tailwind"
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://ppid-solo.vercel.app/",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/ppid-solo.png",
+      video: "",
+    },
+    {
+      title: "System Management HRD",
+      href: "https://sim-hrd-pt-ppi.up.railway.app/",
+      dates: "1 Februari - Present",
+      active: true,
+      description:
+        "Memberikan manfaat besar dalam meningkatkan efisiensi pengelolaan sumber daya manusia, seperti otomatisasi administrasi karyawan, pencatatan absensi, penggajian, serta manajemen cuti yang lebih akurat dan minim kesalahan. Selain itu, sistem ini membantu meningkatkan produktivitas dengan mempermudah perencanaan tenaga kerja, evaluasi kinerja, serta pengembangan karyawan agar lebih kompeten. Kepatuhan terhadap regulasi ketenagakerjaan juga lebih terjamin, termasuk pencatatan pajak dan jaminan sosial. Dengan pengelolaan yang lebih baik, perusahaan dapat menciptakan lingkungan kerja yang nyaman dan transparan, sehingga meningkatkan retensi karyawan dan mengurangi turnover. Selain itu, sistem ini memberikan data akurat untuk analisis dan pengambilan keputusan strategis dalam perencanaan SDM jangka panjang, mendukung pertumbuhan perusahaan secara berkelanjutan.",
+      technologies: [
+        "Laravel"
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://sim-hrd-pt-ppi.up.railway.app/",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/sim-hrd-pt-ppi.png",
+      video: "",
+    },
+    {
+      title: "Company Profile",
+      href: "https://company-profile-production-69d6.up.railway.app/",
+      dates: "1 Februari - Present",
+      active: true,
+      description:
+        "Dengan rilisnya Company Profile, menjadikan alat komunikasi dan pemasaran yang efektif untuk memperkenalkan perusahaan kepada pelanggan, mitra bisnis, dan investor. Dengan company profile yang profesional, PT Prima Paper Indonesia dapat menampilkan informasi tentang visi, misi, produk unggulan seperti kertas berkualitas tinggi, proses produksi ramah lingkungan, serta pencapaian perusahaan. Selain itu, company profile juga meningkatkan kredibilitas perusahaan di industri kertas, membantu membangun brand awareness, serta memperluas peluang kerja sama bisnis baik di pasar lokal maupun internasional.",
+      technologies: [
+        "Laravel"
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://company-profile-production-69d6.up.railway.app/",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/company-profile-pt-ppi.png",
+      video: "",
+    },
     {
       title: "HOFE - Hoax Detection For Everyone",
       href: "https://official-hofe-website.vercel.app/",
