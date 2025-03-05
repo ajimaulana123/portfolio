@@ -150,8 +150,39 @@ export const DATA = {
           href: "https://karak-iota.vercel.app/",
           icon: <Icons.globe className="size-3" />,
         },
+        {
+          type: "Source",
+          href: "https://github.com/ajimaulana123/karak",
+          icon: <Icons.github className="size-3" />,
+        },
       ],
       image: "/umkm.png",
+      video: "",
+    },
+    {
+      title: "Official HOFE Website",
+      href: "https://official-hofe-website.vercel.app/",
+      dates: "1 Desember 2024 - 1 Januari 2025",
+      active: true,
+      description:
+        "**HOFE** adalah platform inovatif yang berkomitmen untuk melawan misinformasi sekaligus mendukung keberlanjutan lingkungan. Misi kami adalah menyediakan deteksi hoaks secara **akurat dan real-time**, serta mengintegrasikan praktik teknologi yang **ramah lingkungan** dalam setiap pengembangannya.",
+      technologies: [
+        "Astro",
+        "Tailwind"
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://official-hofe-website.vercel.app/",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/ajimaulana123/official-HOFE-website",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/official-web-hofe.png",
       video: "",
     },
     {
@@ -170,6 +201,11 @@ export const DATA = {
           type: "Website",
           href: "https://ppid-solo.vercel.app/",
           icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/ajimaulana123/ppid-solo",
+          icon: <Icons.github className="size-3" />,
         },
       ],
       image: "/ppid-solo.png",
@@ -238,6 +274,11 @@ export const DATA = {
           href: "https://hofe-web-app-production.up.railway.app/login",
           icon: <Icons.globe className="size-3" />,
         },
+        {
+          type: "Source",
+          href: "https://github.com/ajimaulana123/hofe-web-app",
+          icon: <Icons.github className="size-3" />,
+        },
       ],
       image: "/hofe.png",
       video: "",
@@ -293,6 +334,41 @@ export const DATA = {
         },
       ],
       image: "/media-editor.png",
+      video: "",
+    },
+    {
+      title: "Sistem pencatatan arsip dokumen",
+      href: "",
+      dates: "Januari 2025",
+      active: true,
+      description:
+        "Sistem Pencatatan Arsip Dokumen adalah aplikasi berbasis web yang dirancang untuk mengelola, menyimpan, dan mencari dokumen secara digital. Sistem ini membantu perusahaan, instansi pemerintah, atau organisasi dalam mengarsipkan dokumen penting secara efisien, mengurangi penggunaan kerta.",
+      technologies: [
+        "PHP",
+        "MySQL",
+      ],
+      links: [
+        
+      ],
+      image: "/arsip-dokumen.png",
+      video: "",
+    },
+    {
+      title: "Sistem pencatatan slip gaji dokter",
+      href: "",
+      dates: "Januari 2025",
+      active: true,
+      description:
+        "Sistem Pencatatan Slip Gaji Dokter adalah aplikasi berbasis web yang dirancang untuk mengelola, mencatat, dan menyajikan slip gaji dokter secara digital.",
+      technologies: [
+        "Next.Js",
+        "Prisma",
+        "Postgre"
+      ],
+      links: [
+      
+      ],
+      image: "/sistem-pendapatan-dokter.png",
       video: "",
     }
   ],
