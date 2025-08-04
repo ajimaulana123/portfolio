@@ -280,7 +280,7 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "/n8n-wordpress.jpg",
+      image: "/n8n-wordperss.jpg",
       video: "",
     },
     {
