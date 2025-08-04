@@ -8,19 +8,16 @@ export const DATA = {
   location: "Surakarta, Indonesia",
   locationLink: "https://g.co/kgs/AY2Q67h",
   description:
-    "Junior Full-Stack Developer dengan pengalaman dalam Web Development, Machine Learning, dan Cloud Computing. Antusias mengembangkan aplikasi berbasis teknologi terbaru untuk memecahkan masalah nyata. Aktif berbagi dan belajar untuk terus berkembang.",
+    "Junior Full-Stack Developer dengan pengalaman dalam Web Development, Machine Learning, dan Cloud Computing, n8n. Antusias mengembangkan aplikasi berbasis teknologi terbaru untuk memecahkan masalah nyata dan autonatisasi. Aktif berbagi dan belajar untuk terus berkembang.",
   summary:
-    "Sebagai junior full-stack developer, saya memiliki pengalaman mengembangkan aplikasi web dan machine learning dengan fokus pada Web Development, Cloud Computing, dan TensorFlow. Saya pernah bekerja di proyek pengembangan aplikasi akreditasi dengan React.js dan Express.js serta mendalami implementasi AI melalui Google Cloud. Saat ini, saya sedang berfokus pada pengembangan aplikasi berbasis teknologi modern untuk memberikan dampak nyata.",
+    "Fullstack Web Developer dengan pengalaman kurang dari satu tahun dalam membangun website akreditasi, sistem informasi manajemen (SIM), sistem manajemen HRD, company profile, dan website kustom untuk klien freelance menggunakan React.js, Express.js, Next.js, Laravel, dan teknologi modern lainnya. Berpengalaman sebagai cohort Cloud Computing dan Machine Learning di Bangkit Academy, dengan keahlian dalam pengembangan model machine learning menggunakan TensorFlow serta deployment aplikasi di Google Cloud Platform (GCP) melalui Cloud Run. Berhasil mengimplementasikan otomasi workflow menggunakan n8n untuk klien freelance, meningkatkan efisiensi pembuatan konten dan integrasi sistem. Berkomitmen untuk terus mengasah keterampilan di bidang Web Development, Machine Learning, dan Google Cloud Platform.",
   avatarUrl: "/me.jpg",
   skills: [
     "Node.js",
-    "Express.js",
-    "Tailwaind",
-    "React",
     "Next.js",
-    "Laravel",
     "Tensorflow",
-    "Google Cloud Platform"
+    "Google Cloud Platform",
+    "n8n"
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
@@ -61,6 +58,54 @@ export const DATA = {
   },
 
   work: [
+    {
+      company: "Freelance",
+      href: "",
+      badges: [],
+      location: "Remote",
+      title: "Otomatisasi Post Content Wordpress",
+      logoUrl: "/n8n-wordperss.png",
+      start: "1 mei 2025",
+      end: "1 Juli 2025",
+      description:
+        "Membangun, mengembangkan workflow n8n untuk otomatisasi post content ke website Wordpress.",
+    },
+    {
+      company: "Freelance",
+      href: "https://warung-digital-kasir-oom.vercel.app/",
+      badges: [],
+      location: "Remote",
+      title: "Kasir Digital",
+      logoUrl: "/kasir-digital.png",
+      start: "1 mei 2025",
+      end: "1 Juli 2025",
+      description:
+        "Membangun, mengembangkan, website kasir digital.",
+    },
+    {
+      company: "Freelance",
+      href: "https://marble-theta.vercel.app/",
+      badges: [],
+      location: "Remote",
+      title: "Marbel",
+      logoUrl: "/marble.png",
+      start: "1 mei 2025",
+      end: "1 Juli 2025",
+      description:
+        "Membangun, mengembangkan, website Marbel.",
+    },
+    {
+      company: "Freelance",
+      href: "https://posyandu-9jko.vercel.app/",
+      badges: [],
+      location: "Remote",
+      title: "Posyandu",
+      logoUrl: "/posyandu.png",
+      start: "1 mei 2025",
+      end: "1 Juli 2025",
+      description:
+        "Membangun, mengembangkan, website posyandu.",
+    },
     {
       company: "PT. Prima Paper Indonesia",
       href: "https://company-profile-production-69d6.up.railway.app/",
@@ -133,6 +178,80 @@ export const DATA = {
     }
   ],
   projects: [
+   {
+      title: "Posyandu",
+      dates: "1 Mei - 1 Juli 2025",
+      active: true,
+      description:
+        "Website Posyandu Digital adalah platform berbasis web yang dirancang untuk memudahkan pencatatan, monitoring, dan pelaporan kegiatan Posyandu secara digital. Melalui website ini, kader Posyandu dapat mencatat data ibu hamil, balita, imunisasi, serta perkembangan gizi dengan lebih rapi dan efisien. Fitur-fitur seperti dashboard data warga, jadwal kegiatan, dan laporan otomatis membantu meningkatkan pelayanan kesehatan masyarakat secara transparan dan terstruktur. Cocok digunakan di tingkat RT/RW hingga kelurahan! 🧑‍⚕️👶📊",
+      technologies: [
+        "Next.Js",
+        "Firebase"
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://marble-theta.vercel.app/",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/posyandu.png",
+      video: "",
+    },
+    {
+      title: "E-commerce Marbel",
+      dates: "1 Mei - 1 Juli 2025",
+      active: true,
+      description:
+        "Dengan adanya website ini, pelaku pemilik warung bisa mencatat informasi barang yang dijual melalui halaman dashboard yang mudah digunakan. Di dalam dashboard ini, mereka dapat menambahkan, mengedit, dan menghapus data barang, termasuk stok, harga, dan kategori. Selain itu, tersedia fitur pencatatan penjualan harian yang otomatis tersimpan, sehingga pemilik warung bisa melihat laporan penjualan secara mingguan atau bulanan dalam bentuk grafik maupun tabel, untuk membantu pengambilan keputusan yang lebih akurat dan efisien.",
+      technologies: [
+        "Next.Js",
+        "Firebase"
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://marble-theta.vercel.app/",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/marble.png",
+      video: "",
+    },
+    {
+      title: "Kasir Digital",
+      dates: "1 Mei - 1 Juli 2025",
+      active: true,
+      description:
+        "Dengan adanya website ini, pelaku pemilik warung bisa mencatat informasi barang yang dijual melalui halaman dashboard yang mudah digunakan. Di dalam dashboard ini, mereka dapat menambahkan, mengedit, dan menghapus data barang, termasuk stok, harga, dan kategori. Selain itu, tersedia fitur pencatatan penjualan harian yang otomatis tersimpan, sehingga pemilik warung bisa melihat laporan penjualan secara mingguan atau bulanan dalam bentuk grafik maupun tabel, untuk membantu pengambilan keputusan yang lebih akurat dan efisien.",
+      technologies: [
+        "React",
+        "Express",
+        "Supabase"
+      ],
+       links: [
+        {
+          type: "Website",
+          href: "https://warung-digital-kasir-oom.vercel.app/",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/kasir-digital.png",
+      video: "",
+    },
+    {
+      title: "Otomatisasi Post Content Wordpress",
+      dates: "1 Mei - 1 Juli 2025",
+      active: true,
+      description:
+        "Dengan adanya otomatisasi ini, pelaku pemilik wrodpress bisa posting content hanya bermodalkan upload foto thumbnail dan body kemudian peritah singkat isi text content dan secara otomaris content tersebut terbit diakun pemilik wordpress.",
+      technologies: [
+        "n8n",
+        "sumopod"
+      ],
+      image: "/n8n-wordpress.jpg",
+      video: "",
+    },
     {
       title: "UMKM Karak",
       href: "https://karak-iota.vercel.app/",
@@ -348,7 +467,7 @@ export const DATA = {
         "MySQL",
       ],
       links: [
-        
+
       ],
       image: "/arsip-dokumen.png",
       video: "",
@@ -366,7 +485,7 @@ export const DATA = {
         "Postgre"
       ],
       links: [
-      
+
       ],
       image: "/sistem-pendapatan-dokter.png",
       video: "",
