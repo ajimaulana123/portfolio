@@ -64,7 +64,7 @@ export const DATA = {
       badges: [],
       location: "Remote",
       title: "Otomatisasi Post Content Wordpress",
-      logoUrl: "/n8n-wordperss.png",
+      logoUrl: "",
       start: "1 mei 2025",
       end: "1 Juli 2025",
       description:
