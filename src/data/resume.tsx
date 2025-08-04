@@ -178,8 +178,9 @@ export const DATA = {
     }
   ],
   projects: [
-   {
+    {
       title: "Posyandu",
+      href: "https://marble-theta.vercel.app/",
       dates: "1 Mei - 1 Juli 2025",
       active: true,
       description:
@@ -194,12 +195,18 @@ export const DATA = {
           href: "https://marble-theta.vercel.app/",
           icon: <Icons.globe className="size-3" />,
         },
+        {
+          type: "Source",
+          href: "",
+          icon: <Icons.github className="size-3" />,
+        },
       ],
       image: "/posyandu.png",
       video: "",
     },
     {
       title: "E-commerce Marbel",
+      href: "https://marble-theta.vercel.app/",
       dates: "1 Mei - 1 Juli 2025",
       active: true,
       description:
@@ -214,12 +221,18 @@ export const DATA = {
           href: "https://marble-theta.vercel.app/",
           icon: <Icons.globe className="size-3" />,
         },
+        {
+          type: "Source",
+          href: "",
+          icon: <Icons.github className="size-3" />,
+        },
       ],
       image: "/marble.png",
       video: "",
     },
     {
       title: "Kasir Digital",
+      href: "https://warung-digital-kasir-oom.vercel.app/",
       dates: "1 Mei - 1 Juli 2025",
       active: true,
       description:
@@ -229,18 +242,24 @@ export const DATA = {
         "Express",
         "Supabase"
       ],
-       links: [
+      links: [
         {
           type: "Website",
           href: "https://warung-digital-kasir-oom.vercel.app/",
           icon: <Icons.globe className="size-3" />,
         },
+        {
+          type: "Source",
+          href: "",
+          icon: <Icons.github className="size-3" />,
+        }
       ],
       image: "/kasir-digital.png",
       video: "",
     },
     {
       title: "Otomatisasi Post Content Wordpress",
+      href: "",
       dates: "1 Mei - 1 Juli 2025",
       active: true,
       description:
@@ -248,6 +267,18 @@ export const DATA = {
       technologies: [
         "n8n",
         "sumopod"
+      ],
+       links: [
+        {
+          type: "Website",
+          href: "",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "",
+          icon: <Icons.github className="size-3" />,
+        },
       ],
       image: "/n8n-wordpress.jpg",
       video: "",
