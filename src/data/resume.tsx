@@ -72,6 +72,18 @@ export const DATA = {
     },
     {
       company: "Freelance",
+      href: "",
+      badges: [],
+      location: "Remote",
+      title: "E-Comerce Daging",
+      logoUrl: "",
+      start: "1 April 2025",
+      end: "1 Mei 2025",
+      description:
+        "Membangun, mengembangkan Toko Online yang berfokus pada penjualan daging.",
+    },
+    {
+      company: "Freelance",
       href: "https://warung-digital-kasir-oom.vercel.app/",
       badges: [],
       location: "Remote",
@@ -88,7 +100,7 @@ export const DATA = {
       badges: [],
       location: "Remote",
       title: "Marbel",
-      logoUrl: "/marble.png",
+      logoUrl: "",
       start: "1 mei 2025",
       end: "1 Juli 2025",
       description:
@@ -100,7 +112,7 @@ export const DATA = {
       badges: [],
       location: "Remote",
       title: "Posyandu",
-      logoUrl: "/posyandu.png",
+      logoUrl: "",
       start: "1 mei 2025",
       end: "1 Juli 2025",
       description:
@@ -202,6 +214,32 @@ export const DATA = {
         },
       ],
       image: "/posyandu.png",
+      video: "",
+    },
+    {
+      title: "E-commerce Daging",
+      href: "https://meat-commerce-seven.vercel.app/",
+      dates: "1 April - 1 Mei 2025",
+      active: true,
+      description:
+        "Dengan adanya website ini, pelaku pemilik tokop daging bisa memasarkan para pemilik toko daging dapat memasarkan produk mereka secara lebih luas dan efisien. Pelanggan dapat melihat katalog produk, mengecek ketersediaan stok, dan melakukan pemesanan langsung melalui website tanpa harus datang ke toko secara fisik. Hal ini tidak hanya meningkatkan jangkauan pasar, tetapi juga memberikan kemudahan bagi pembeli dalam memenuhi kebutuhan sehari-hari Website ini juga mendukung integrasi dengan fitur komunikasi seperti WhatsApp, serta menyediakan dashboard admin yang memudahkan pelaku usaha dalam mengelola produk, pesanan, dan laporan penjualan secara real-time.",
+      technologies: [
+        "Next.Js",
+        "Firebase"
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://meat-commerce-seven.vercel.app/",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/meat-e-commerce.png",
       video: "",
     },
     {
