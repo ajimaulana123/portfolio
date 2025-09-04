@@ -63,6 +63,42 @@ export const DATA = {
       href: "",
       badges: [],
       location: "Remote",
+      title: "E-commerce via Telegram",
+      logoUrl: "",
+      start: "1 Agustus 2025",
+      end: "2 September 2025",
+      description:
+        "Membangun, mengembangkan workflow n8n untuk Toko Online via Telegram.",
+    },
+     {
+      company: "Freelance",
+      href: "",
+      badges: [],
+      location: "Remote",
+      title: "Otomatisasi Post Content Blogger",
+      logoUrl: "",
+      start: "1 Agustus 2025",
+      end: "2 Agustus 2025",
+      description:
+        "Membangun, mengembangkan workflow n8n untuk otomatisasi post content ke website Blogger.",
+    },
+    {
+      company: "Freelance",
+      href: "",
+      badges: [],
+      location: "Remote",
+      title: "Inventory Sekolah",
+      logoUrl: "",
+      start: "1 Agustus 2025",
+      end: "25 Agustus 2025",
+      description:
+        "Membangun, mengembangkan website inventory sekolah.",
+    },
+    {
+      company: "Freelance",
+      href: "",
+      badges: [],
+      location: "Remote",
       title: "Otomatisasi Post Content Wordpress",
       logoUrl: "",
       start: "1 mei 2025",
@@ -191,8 +227,85 @@ export const DATA = {
   ],
   projects: [
     {
+      title: "E-commerce via Telegram",
+      href: "",
+      dates: "1 Agustus - 1 September 2025",
+      active: true,
+      description:
+        "Proyek ini merupakan sistem e-commerce berbasis bot Telegram yang menyediakan fitur login pengguna, melihat dan memfilter produk berdasarkan nama, pagination untuk navigasi, penambahan produk ke keranjang, checkout, pembayaran manual, konfirmasi pembayaran dengan bukti transfer, serta pengiriman resi JNE. Penggunaan Telegram sebagai platform dipilih karena menawarkan akses instan tanpa instalasi aplikasi tambahan, notifikasi real-time, antarmuka yang ringan dan mudah digunakan, serta biaya operasional yang rendah. Selain itu, Telegram sudah banyak digunakan di berbagai kalangan, menjadikannya platform yang efisien dan praktis untuk memperluas jangkauan bisnis secara digital, terutama bagi pelaku UMKM yang ingin memulai toko online dengan cepat dan sederhana.",
+      technologies: [
+        "n8n",
+        "sumopod"
+      ],
+       links: [
+        {
+          type: "Website",
+          href: "https://youtu.be/JrSkkdsUK-0?si=DhsbM4nBx5KjqdGz",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/ecommerce-workflow.jpg",
+      video: "",
+    },
+    {
+      title: "Otomatisasi Post Content Blogger",
+      href: "",
+      dates: "1 Agustus - 2 Agustus 2025",
+      active: true,
+      description: "Dengan adanya otomatisasi ini, pelaku pemilik Blogger bisa posting content hanya bermodalkan upload foto thumbnail dan body kemudian peritah singkat isi text content dan secara otomaris content tersebut terbit diakun pemilik Blogger.",
+      technologies: [
+        "n8n",
+        "sumopod"
+      ],
+       links: [
+        {
+          type: "Website",
+          href: "",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/ajimaulana123/n8n-template/blob/main/auto%20post%20blogger%20with%20telegram.json",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/n8n-wordperss.jpg",
+      video: "",
+    },
+    {
+      title: "Inventory Sekolah",
+      href: "https://sekull-inventory.vercel.app/",
+      dates: "1 agustus 2025 - 20 Agustus 2025",
+      active: true,
+      description:
+        "Website Manajemen Aset Sekolah adalah platform berbasis web yang dirancang untuk mempermudah pengelolaan dan pelacakan aset sekolah secara digital. Melalui sistem ini, admin dapat melakukan pencatatan inventaris barang, edit dan hapus, pencarian cepat, dan pagination untuk navigasi data yang lebih efisien. Tersedia juga fitur import data dari file Excel, sehingga proses input data dalam jumlah besar menjadi lebih praktis. Halaman dashboard menyajikan ringkasan data aset secara real-time, sementara halaman laporan memungkinkan pengguna mengekspor data dalam format PDF, Excel, atau CSV untuk keperluan dokumentasi dan audit. Cocok digunakan oleh sekolah untuk meningkatkan efisiensi, transparansi, dan akurasi dalam manajemen aset! 🎒🏫📋",
+      technologies: [
+        "Next.Js",
+        "Firebase"
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://sekull-inventory.vercel.app",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/inventory-sekull.png",
+      video: "",
+    },
+    {
       title: "Posyandu",
-      href: "https://marble-theta.vercel.app/",
+      href: "https://posyandu-9jko.vercel.app/",
       dates: "1 Mei - 1 Juli 2025",
       active: true,
       description:
@@ -314,7 +427,7 @@ export const DATA = {
         },
         {
           type: "Source",
-          href: "",
+          href: "https://github.com/ajimaulana123/n8n-template/blob/main/auto%20post%20wordpress%20with%20telegram.json",
           icon: <Icons.github className="size-3" />,
         },
       ],
