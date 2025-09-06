@@ -142,3 +142,23 @@ code[data-line-numbers-max-digits="2"] > [data-line]::before {
 code[data-line-numbers-max-digits="3"] > [data-line]::before {
   width: 3rem;
 }
+
+.highlight {
+  background-color: yellow;
+  color: black;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+@keyframes highlight-animation {
+  from {
+    background-color: transparent;
+  }
+  to {
+    background-color: yellow;
+  }
+}
+
+.highlight-animated {
+  animation: highlight-animation 1s ease-in-out;
+}

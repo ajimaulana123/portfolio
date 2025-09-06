@@ -8,7 +8,7 @@ export const DATA = {
   location: "Surakarta, Indonesia",
   locationLink: "https://g.co/kgs/AY2Q67h",
   description:
-    "Junior Full-Stack Developer dengan pengalaman dalam Web Development, Machine Learning, dan Cloud Computing, n8n. Antusias mengembangkan aplikasi berbasis teknologi terbaru untuk memecahkan masalah nyata dan autonatisasi. Aktif berbagi dan belajar untuk terus berkembang.",
+    "Junior <mark>Full-Stack Developer</mark> dengan pengalaman dalam <mark>Web Development</mark>, <mark>Machine Learning</mark>, dan <mark>Cloud Computing</mark>, <mark>n8n</mark>. Antusias mengembangkan aplikasi berbasis teknologi terbaru untuk memecahkan masalah nyata dan <mark>automatisasi</mark>. Aktif berbagi dan belajar untuk terus berkembang.",
   summary:
     "Fullstack Web Developer dengan pengalaman kurang dari satu tahun dalam membangun website akreditasi, sistem informasi manajemen (SIM), sistem manajemen HRD, company profile, dan website kustom untuk klien freelance menggunakan React.js, Express.js, Next.js, Laravel, dan teknologi modern lainnya. Berpengalaman sebagai cohort Cloud Computing dan Machine Learning di Bangkit Academy, dengan keahlian dalam pengembangan model machine learning menggunakan TensorFlow serta deployment aplikasi di Google Cloud Platform (GCP) melalui Cloud Run. Berhasil mengimplementasikan otomasi workflow menggunakan n8n untuk klien freelance, meningkatkan efisiensi pembuatan konten dan integrasi sistem. Berkomitmen untuk terus mengasah keterampilan di bidang Web Development, Machine Learning, dan Google Cloud Platform.",
   avatarUrl: "/me.jpg",
@@ -237,6 +237,7 @@ export const DATA = {
         "n8n",
         "sumopod"
       ],
+      type: "n8n",
        links: [
         {
           type: "Website",
@@ -262,6 +263,7 @@ export const DATA = {
         "n8n",
         "sumopod"
       ],
+      type: "n8n",
        links: [
         {
           type: "Website",
@@ -288,6 +290,7 @@ export const DATA = {
         "Next.Js",
         "Firebase"
       ],
+      type: "Web",
       links: [
         {
           type: "Website",
@@ -314,6 +317,7 @@ export const DATA = {
         "Next.Js",
         "Firebase"
       ],
+      type: "Web",
       links: [
         {
           type: "Website",
@@ -340,6 +344,7 @@ export const DATA = {
         "Next.Js",
         "Firebase"
       ],
+      type: "Web",
       links: [
         {
           type: "Website",
@@ -366,6 +371,7 @@ export const DATA = {
         "Next.Js",
         "Firebase"
       ],
+      type: "Web",
       links: [
         {
           type: "Website",
@@ -393,6 +399,7 @@ export const DATA = {
         "Express",
         "Supabase"
       ],
+      type: "Web",
       links: [
         {
           type: "Website",
@@ -419,6 +426,7 @@ export const DATA = {
         "n8n",
         "sumopod"
       ],
+      type: "n8n",
        links: [
         {
           type: "Website",
@@ -445,6 +453,7 @@ export const DATA = {
         "Next.Js",
         "Tailwind"
       ],
+      type: "Web",
       links: [
         {
           type: "Website",
@@ -471,6 +480,7 @@ export const DATA = {
         "Astro",
         "Tailwind"
       ],
+      type: "Web",
       links: [
         {
           type: "Website",
@@ -497,6 +507,7 @@ export const DATA = {
         "Next.Js",
         "Tailwind"
       ],
+      type: "Web",
       links: [
         {
           type: "Website",
@@ -522,6 +533,7 @@ export const DATA = {
       technologies: [
         "Laravel"
       ],
+      type: "Web",
       links: [
         {
           type: "Website",
@@ -542,6 +554,7 @@ export const DATA = {
       technologies: [
         "Laravel"
       ],
+      type: "Web",
       links: [
         {
           type: "Website",
@@ -569,6 +582,7 @@ export const DATA = {
         "Python",
         "Google Cloud Run"
       ],
+      type: "Machine Learning",
       links: [
         {
           type: "Website",
@@ -596,6 +610,7 @@ export const DATA = {
         "React",
         "TailwindCSS",
       ],
+      type: "Web",
       links: [
         {
           type: "Website",
@@ -622,6 +637,7 @@ export const DATA = {
         "Next.js",
         "Shadcn UI"
       ],
+      type: "Web",
       links: [
         {
           type: "Website",
@@ -648,6 +664,7 @@ export const DATA = {
         "PHP",
         "MySQL",
       ],
+      type: "Web",
       links: [
 
       ],
@@ -666,6 +683,7 @@ export const DATA = {
         "Prisma",
         "Postgre"
       ],
+      type: "Web",
       links: [
 
       ],

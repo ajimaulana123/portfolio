@@ -1,3 +1,4 @@
+"use client";
 import { Badge } from "@/components/ui/badge";
 import {
   Card,
@@ -10,6 +11,8 @@ import { cn } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
 import Markdown from "react-markdown";
+import { useState, useRef } from "react";
+import { Button } from "./ui/button";
 
 interface Props {
   title: string;
@@ -28,6 +31,9 @@ interface Props {
   className?: string;
 }
 
+const TRUNCATE_LENGTH = 200;
+const COLLAPSED_HEIGHT = "60px";
+
 export function ProjectCard({
   title,
   href,
@@ -40,6 +46,15 @@ export function ProjectCard({
   links,
   className,
 }: Props) {
+  const [isExpanded, setIsExpanded] = useState(false);
+  const descriptionRef = useRef<HTMLDivElement>(null);
+
+  const toggleExpanded = (e: React.MouseEvent<HTMLButtonElement>) => {
+    e.preventDefault();
+    e.stopPropagation();
+    setIsExpanded(!isExpanded);
+  };
+
   return (
     <Card
       className={
@@ -57,7 +72,7 @@ export function ProjectCard({
             loop
             muted
             playsInline
-            className="pointer-events-none mx-auto h-40 w-full object-cover object-top" // needed because random black line at bottom of video
+            className="pointer-events-none mx-auto h-40 w-full object-cover object-top"
           />
         )}
         {image && (
@@ -77,9 +92,31 @@ export function ProjectCard({
           <div className="hidden font-sans text-xs underline print:visible">
             {link?.replace("https://", "").replace("www.", "").replace("/", "")}
           </div>
-          <Markdown className="prose max-w-full text-pretty font-sans text-xs text-muted-foreground dark:prose-invert">
-            {description}
-          </Markdown>
+          
+          <div
+            className="overflow-hidden transition-all duration-300 ease-in-out"
+            style={{
+              maxHeight: isExpanded
+                ? `${descriptionRef.current?.scrollHeight}px`
+                : COLLAPSED_HEIGHT,
+            }}
+          >
+            <div ref={descriptionRef}>
+              <Markdown className="prose max-w-full text-pretty font-sans text-xs text-muted-foreground dark:prose-invert">
+                {description}
+              </Markdown>
+            </div>
+          </div>
+
+          {description.length > TRUNCATE_LENGTH && (
+            <Button
+              variant="link"
+              className="px-0 text-xs"
+              onClick={toggleExpanded}
+            >
+              {isExpanded ? "Sembunyikan" : "Selengkapnya..."}
+            </Button>
+          )}
         </div>
       </CardHeader>
       <CardContent className="mt-auto flex flex-col px-2">
