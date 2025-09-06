@@ -1,5 +1,6 @@
 import { Icons } from "@/components/icons";
-import { HomeIcon, NotebookIcon } from "lucide-react";
+import { HomeIcon, NotebookIcon, Facebook, Instagram } from "lucide-react";
+import { BsThreads } from "react-icons/bs";
 
 export const DATA = {
   name: "Aji Maulana",
@@ -41,6 +42,24 @@ export const DATA = {
 
         navbar: true,
       },
+      Facebook: {
+        name: "Facebook",
+        url: "https://www.facebook.com/profile.php?id=100051526432299&locale=id_ID",
+        icon: Facebook,
+        navbar: true,
+      },
+      Instagram: {
+        name: "Instagram",
+        url: "https://www.instagram.com/ajimaulana_7/",
+        icon: Instagram,
+        navbar: true,
+      },
+      Threads: {
+        name: "Threads",
+        url: "https://www.threads.com/@ajimaulana_7",
+        icon: BsThreads,
+        navbar: true,
+      },
       Youtube: {
         name: "Youtube",
         url: "https://www.youtube.com/@ajimaulana8721",
@@ -51,7 +70,6 @@ export const DATA = {
         name: "Send Email",
         url: "aji658911@gmail.com",
         icon: Icons.email,
-
         navbar: false,
       },
     },

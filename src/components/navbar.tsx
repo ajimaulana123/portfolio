@@ -27,6 +27,7 @@ export default function Navbar() {
                     "size-12"
                   )}
                 >
+                  
                   <item.icon className="size-4" />
                 </Link>
               </TooltipTrigger>
