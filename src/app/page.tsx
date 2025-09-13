@@ -10,7 +10,7 @@ import { Button } from "@/components/ui/button";
 import { DATA } from "@/data/resume";
 import Link from "next/link";
 import Markdown from "react-markdown";
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useRef } from 'react';
 import { motion } from "framer-motion";
 
 const BLUR_FADE_DELAY = 0.04;
@@ -22,6 +22,66 @@ export default function Page() {
   const [workFilter, setWorkFilter] = useState('All');
   const [visibleProjects, setVisibleProjects] = useState(PROJECTS_PER_PAGE);
   const [visibleWork, setVisibleWork] = useState(WORK_PER_PAGE);
+
+  const workRef = useRef<HTMLDivElement>(null);
+  const projectRef = useRef<HTMLDivElement>(null);
+
+  const [isWorkDown, setIsWorkDown] = useState(false);
+  const [startXWork, setStartXWork] = useState(0);
+  const [scrollLeftWork, setScrollLeftWork] = useState(0);
+
+  const [isProjectDown, setIsProjectDown] = useState(false);
+  const [startXProject, setStartXProject] = useState(0);
+  const [scrollLeftProject, setScrollLeftProject] = useState(0);
+
+  const handleMouseDown = (
+    e: React.MouseEvent<HTMLDivElement>,
+    ref: React.RefObject<HTMLDivElement>,
+    setIsDown: React.Dispatch<React.SetStateAction<boolean>>,
+    setStartX: React.Dispatch<React.SetStateAction<number>>,
+    setScrollLeft: React.Dispatch<React.SetStateAction<number>>
+  ) => {
+    if (ref.current) {
+      setIsDown(true);
+      ref.current.classList.add('active');
+      setStartX(e.pageX - ref.current.offsetLeft);
+      setScrollLeft(ref.current.scrollLeft);
+    }
+  };
+
+  const handleMouseLeave = (
+    ref: React.RefObject<HTMLDivElement>,
+    setIsDown: React.Dispatch<React.SetStateAction<boolean>>
+  ) => {
+    setIsDown(false);
+    if (ref.current) {
+      ref.current.classList.remove('active');
+    }
+  };
+
+  const handleMouseUp = (
+    ref: React.RefObject<HTMLDivElement>,
+    setIsDown: React.Dispatch<React.SetStateAction<boolean>>
+  ) => {
+    setIsDown(false);
+    if (ref.current) {
+      ref.current.classList.remove('active');
+    }
+  };
+
+  const handleMouseMove = (
+    e: React.MouseEvent<HTMLDivElement>,
+    ref: React.RefObject<HTMLDivElement>,
+    isDown: boolean,
+    startX: number,
+    scrollLeft: number
+  ) => {
+    if (!isDown || !ref.current) return;
+    e.preventDefault();
+    const x = e.pageX - ref.current.offsetLeft;
+    const walk = (x - startX) * 2;
+    ref.current.scrollLeft = scrollLeft - walk;
+  };
 
   const filteredProjects = useMemo(() => {
     return DATA.projects.filter(project => {
@@ -45,7 +105,7 @@ export default function Page() {
   const projectsToShow = useMemo(() => {
     return filteredProjects.slice(0, visibleProjects);
   }, [filteredProjects, visibleProjects]);
-  
+
   const workToShow = useMemo(() => {
     return filteredWork.slice(0, visibleWork);
   }, [filteredWork, visibleWork]);
@@ -62,8 +122,14 @@ export default function Page() {
     <main className="flex flex-col min-h-[100dvh] space-y-10">
       <section id="hero">
         <div className="mx-auto w-full max-w-2xl space-y-8">
-          <div className="gap-2 flex justify-between">
-            <div className="flex-col flex flex-1 space-y-1.5">
+          <div className="flex flex-col sm:flex-row gap-4 sm:gap-2 sm:justify-between items-center sm:items-start">
+            <BlurFade delay={BLUR_FADE_DELAY}>
+              <Avatar className="size-28 border">
+                <AvatarImage alt={DATA.name} src={DATA.avatarUrl} />
+                <AvatarFallback>{DATA.initials}</AvatarFallback>
+              </Avatar>
+            </BlurFade>
+            <div className="flex-col flex flex-1 space-y-1.5 text-center sm:text-left">
               <BlurFadeText
                 delay={BLUR_FADE_DELAY}
                 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none"
@@ -75,15 +141,9 @@ export default function Page() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: BLUR_FADE_DELAY }}
                 dangerouslySetInnerHTML={{ __html: DATA.description }}
-                className="max-w-[600px] md:text-xl"
+                className="max-w-[600px] md:text-xl text-left"
               />
             </div>
-            <BlurFade delay={BLUR_FADE_DELAY}>
-              <Avatar className="size-28 border">
-                <AvatarImage alt={DATA.name} src={DATA.avatarUrl} />
-                <AvatarFallback>{DATA.initials}</AvatarFallback>
-              </Avatar>
-            </BlurFade>
           </div>
         </div>
       </section>
@@ -111,7 +171,14 @@ export default function Page() {
           <BlurFade delay={BLUR_FADE_DELAY * 5}>
             <h2 className="text-xl font-bold">Work Experience</h2>
           </BlurFade>
-          <div className="flex justify-center space-x-4">
+          <div
+            ref={workRef}
+            className="flex justify-start space-x-4 my-9 overflow-x-auto whitespace-nowrap px-4 pb-4 sm:justify-center cursor-grab active:cursor-grabbing"
+            onMouseDown={(e) => handleMouseDown(e, workRef, setIsWorkDown, setStartXWork, setScrollLeftWork)}
+            onMouseLeave={() => handleMouseLeave(workRef, setIsWorkDown)}
+            onMouseUp={() => handleMouseUp(workRef, setIsWorkDown)}
+            onMouseMove={(e) => handleMouseMove(e, workRef, isWorkDown, startXWork, scrollLeftWork)}
+          >
             <button onClick={() => { setWorkFilter('All'); setVisibleWork(WORK_PER_PAGE); }} className={`px-4 py-2 rounded-md ${workFilter === 'All' ? 'bg-primary text-primary-foreground' : 'bg-secondary'}`}>All</button>
             <button onClick={() => { setWorkFilter('Freelance'); setVisibleWork(WORK_PER_PAGE); }} className={`px-4 py-2 rounded-md ${workFilter === 'Freelance' ? 'bg-primary text-primary-foreground' : 'bg-secondary'}`}>Freelance</button>
             <button onClick={() => { setWorkFilter('Bangkit Academy'); setVisibleWork(WORK_PER_PAGE); }} className={`px-4 py-2 rounded-md ${workFilter === 'Bangkit Academy' ? 'bg-primary text-primary-foreground' : 'bg-secondary'}`}>Bangkit Academy</button>
@@ -197,7 +264,14 @@ export default function Page() {
               </div>
             </div>
           </BlurFade>
-          <div className="flex justify-center space-x-4">
+          <div
+            ref={projectRef}
+            className="flex justify-start space-x-4 my-9 overflow-x-auto whitespace-nowrap px-4 pb-4 sm:justify-center cursor-grab active:cursor-grabbing"
+            onMouseDown={(e) => handleMouseDown(e, projectRef, setIsProjectDown, setStartXProject, setScrollLeftProject)}
+            onMouseLeave={() => handleMouseLeave(projectRef, setIsProjectDown)}
+            onMouseUp={() => handleMouseUp(projectRef, setIsProjectDown)}
+            onMouseMove={(e) => handleMouseMove(e, projectRef, isProjectDown, startXProject, scrollLeftProject)}
+          >
             <button onClick={() => { setProjectFilter('All'); setVisibleProjects(PROJECTS_PER_PAGE); }} className={`px-4 py-2 rounded-md ${projectFilter === 'All' ? 'bg-primary text-primary-foreground' : 'bg-secondary'}`}>All</button>
             <button onClick={() => { setProjectFilter('n8n'); setVisibleProjects(PROJECTS_PER_PAGE); }} className={`px-4 py-2 rounded-md ${projectFilter === 'n8n' ? 'bg-primary text-primary-foreground' : 'bg-secondary'}`}>n8n</button>
             <button onClick={() => { setProjectFilter('Machine Learning'); setVisibleProjects(PROJECTS_PER_PAGE); }} className={`px-4 py-2 rounded-md ${projectFilter === 'Machine Learning' ? 'bg-primary text-primary-foreground' : 'bg-secondary'}`}>Machine Learning</button>
