@@ -9,16 +9,16 @@ export const DATA = {
   location: "Surakarta, Indonesia",
   locationLink: "https://g.co/kgs/AY2Q67h",
   description:
-    "Junior <mark>Full-Stack Developer</mark> dengan pengalaman dalam <mark>Web Development</mark>, <mark>Machine Learning</mark>, dan <mark>Cloud Computing</mark>, <mark>n8n</mark>. Antusias mengembangkan aplikasi berbasis teknologi terbaru untuk memecahkan masalah nyata dan <mark>automatisasi</mark>. Aktif berbagi dan belajar untuk terus berkembang.",
+    "<mark>Full-Stack Developer</mark> dengan pengalaman <mark>1 tahun</mark> serta <mark>5 bulan automation dengan n8n</mark>. Memiliki antusiasme pada bidang <mark>Machine Learning</mark> dan <mark>Cloud Computing</mark> untuk memecahkan berbagai permasalahan nyata.",
   summary:
-    "Fullstack Web Developer dengan pengalaman kurang dari satu tahun dalam membangun website akreditasi, sistem informasi manajemen (SIM), sistem manajemen HRD, company profile, dan website kustom untuk klien freelance menggunakan React.js, Express.js, Next.js, Laravel, dan teknologi modern lainnya. Berpengalaman sebagai cohort Cloud Computing dan Machine Learning di Bangkit Academy, dengan keahlian dalam pengembangan model machine learning menggunakan TensorFlow serta deployment aplikasi di Google Cloud Platform (GCP) melalui Cloud Run. Berhasil mengimplementasikan otomasi workflow menggunakan n8n untuk klien freelance, meningkatkan efisiensi pembuatan konten dan integrasi sistem. Berkomitmen untuk terus mengasah keterampilan di bidang Web Development, Machine Learning, dan Google Cloud Platform.",
+    "Seorang Fullstack Web Developer dan Automation Engineer dengan pengalaman lebih dari 1 tahun menggunakan Next.js serta lebih dari 5 bulan dalam membangun workflow otomatisasi menggunakan n8n. Telah menyelesaikan 10+ proyek yang meliputi pengembangan web, integrasi API, dan sistem automasi. Pernah magang sebagai Fullstack Web Developer Intern di PT Prima Paper Indonesia, serta memiliki pengalaman kerja tambahan di Politeknik Pratama Mulia Surakarta. Juga telah menangani berbagai proyek freelance. Lulusan Bangkit Academy Machine Learning Track, dengan proyek capstone yang meraih peringkat 50 dari 300 peserta, menggunakan Python, TensorFlow, scikit-learn, dan berbagai library pemrosesan data. Berpengalaman pula dalam mengembangkan model machine learning untuk deteksi hoaks di dunia nyata. Dengan kombinasi keahlian di Next.js, n8n, dan machine learning, dikenal sebagai pembelajar cepat yang mampu membangun solusi digital yang efisien, skalabel, dan berdampak.",
   avatarUrl: "/me.jpg",
   skills: [
-    "Node.js",
+    "n8n",
     "Next.js",
     "Tensorflow",
-    "Google Cloud Platform",
-    "n8n"
+    "Scikit-Learn",
+    "Python"
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
@@ -26,7 +26,7 @@ export const DATA = {
   ],
   contact: {
     email: "aji658911@gmail.com",
-    tel: "+6281234567890",
+    tel: "+6285175434869",
     social: {
       GitHub: {
         name: "GitHub",
@@ -78,7 +78,17 @@ export const DATA = {
   work: [
     {
       company: "Freelance",
-      href: "",
+      badges: [],
+      location: "Remote",
+      title: "Automated Candidate Assessment",
+      logoUrl: "",
+      start: "20 November 2025",
+      end: "20 Desember 2025",
+      description:
+        "Membangun dan mengembangkan workflow n8n untuk mengotomatisasi proses penerimaan kandidat, mulai dari pengumpulan data, analisis CV, penilaian kecocokan, hingga pelaporan hasil.",
+    },
+    {
+      company: "Freelance",
       badges: [],
       location: "Remote",
       title: "E-commerce via Telegram",
@@ -90,7 +100,6 @@ export const DATA = {
     },
      {
       company: "Freelance",
-      href: "",
       badges: [],
       location: "Remote",
       title: "Otomatisasi Post Content Blogger",
@@ -102,7 +111,7 @@ export const DATA = {
     },
     {
       company: "Freelance",
-      href: "",
+      href: "https://sekull-inventory.vercel.app/",
       badges: [],
       location: "Remote",
       title: "Inventory Sekolah",
@@ -114,7 +123,6 @@ export const DATA = {
     },
     {
       company: "Freelance",
-      href: "",
       badges: [],
       location: "Remote",
       title: "Otomatisasi Post Content Wordpress",
@@ -126,7 +134,7 @@ export const DATA = {
     },
     {
       company: "Freelance",
-      href: "",
+      href: "https://meat-commerce-seven.vercel.app/",
       badges: [],
       location: "Remote",
       title: "E-Comerce Daging",
@@ -174,7 +182,6 @@ export const DATA = {
     },
     {
       company: "PT. Prima Paper Indonesia",
-      href: "https://company-profile-production-69d6.up.railway.app/",
       badges: [],
       location: "Hybrid",
       title: "Company Profile & System Management HRD",
@@ -186,7 +193,7 @@ export const DATA = {
     },
     {
       company: "Akreditasi Kampus",
-      href: "http://politama.ac.id/",
+      href: "https://akreditasi-6c3jsmx6f-tamakuz.vercel.app/",
       badges: [],
       location: "On site",
       title: "Akreditasi Jurusan",
@@ -245,8 +252,23 @@ export const DATA = {
   ],
   projects: [
     {
+      title: "Automated Candidate Assessment",
+      dates: "2 November - 20 Desember 2025",
+      active: true,
+      description:
+        "Proyek ini merupakan sistem otomatisasi rekrutmen berbasis workflow n8n yang menangani seluruh proses penilaian kandidat secara end-to-end. Sistem ini menerima data pelamar beserta CV dari website, melakukan konversi CV (PDF) menjadi teks, mengambil data lowongan yang relevan, dan melakukan analisis kecocokan kandidat menggunakan AI berdasarkan kriteria posisi yang dilamar. Hasil analisis kemudian disimpan ke database, CV diunggah ke Supabase Storage, dan sistem mengembalikan status kelulusan kandidat (lolos atau tidak lolos) ke website. Selain itu, workflow juga menghasilkan ringkasan evaluasi serta mengirimkan notifikasi otomatis ke tim HR melalui Telegram. Solusi ini dirancang untuk mempercepat proses screening awal, mengurangi pekerjaan manual HR, dan memastikan proses seleksi berlangsung secara konsisten, efisien, dan dapat di-scale tanpa menambah biaya operasional.",
+      technologies: [
+        "n8n",
+        "Cloudflare Tunnel"
+      ],
+      type: "n8n",
+       links: [
+      ],
+      image: "/ai-hr.png",
+      video: "",
+    },
+    {
       title: "E-commerce via Telegram",
-      href: "",
       dates: "1 Agustus - 1 September 2025",
       active: true,
       description:
@@ -261,19 +283,13 @@ export const DATA = {
           type: "Website",
           href: "https://youtu.be/JrSkkdsUK-0?si=DhsbM4nBx5KjqdGz",
           icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "",
-          icon: <Icons.github className="size-3" />,
-        },
+        }
       ],
       image: "/ecommerce-workflow.jpg",
       video: "",
     },
     {
       title: "Otomatisasi Post Content Blogger",
-      href: "",
       dates: "1 Agustus - 2 Agustus 2025",
       active: true,
       description: "Dengan adanya otomatisasi ini, pelaku pemilik Blogger bisa posting content hanya bermodalkan upload foto thumbnail dan body kemudian peritah singkat isi text content dan secara otomaris content tersebut terbit diakun pemilik Blogger.",
@@ -283,16 +299,6 @@ export const DATA = {
       ],
       type: "n8n",
        links: [
-        {
-          type: "Website",
-          href: "",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "https://github.com/ajimaulana123/n8n-template/blob/main/auto%20post%20blogger%20with%20telegram.json",
-          icon: <Icons.github className="size-3" />,
-        },
       ],
       image: "/n8n-wordperss.jpg",
       video: "",
@@ -314,12 +320,7 @@ export const DATA = {
           type: "Website",
           href: "https://sekull-inventory.vercel.app",
           icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "",
-          icon: <Icons.github className="size-3" />,
-        },
+        }
       ],
       image: "/inventory-sekull.png",
       video: "",
@@ -339,13 +340,8 @@ export const DATA = {
       links: [
         {
           type: "Website",
-          href: "https://marble-theta.vercel.app/",
+          href: "https://posyandu-9jko.vercel.app/",
           icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "",
-          icon: <Icons.github className="size-3" />,
         },
       ],
       image: "/posyandu.png",
@@ -368,12 +364,7 @@ export const DATA = {
           type: "Website",
           href: "https://meat-commerce-seven.vercel.app/",
           icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "",
-          icon: <Icons.github className="size-3" />,
-        },
+        }
       ],
       image: "/meat-e-commerce.png",
       video: "",
@@ -395,12 +386,7 @@ export const DATA = {
           type: "Website",
           href: "https://marble-theta.vercel.app/",
           icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "",
-          icon: <Icons.github className="size-3" />,
-        },
+        }
       ],
       image: "/marble.png",
       video: "",
@@ -414,7 +400,6 @@ export const DATA = {
         "Dengan adanya website ini, pelaku pemilik warung bisa mencatat informasi barang yang dijual melalui halaman dashboard yang mudah digunakan. Di dalam dashboard ini, mereka dapat menambahkan, mengedit, dan menghapus data barang, termasuk stok, harga, dan kategori. Selain itu, tersedia fitur pencatatan penjualan harian yang otomatis tersimpan, sehingga pemilik warung bisa melihat laporan penjualan secara mingguan atau bulanan dalam bentuk grafik maupun tabel, untuk membantu pengambilan keputusan yang lebih akurat dan efisien.",
       technologies: [
         "React",
-        "Express",
         "Supabase"
       ],
       type: "Web",
@@ -423,11 +408,6 @@ export const DATA = {
           type: "Website",
           href: "https://warung-digital-kasir-oom.vercel.app/",
           icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "",
-          icon: <Icons.github className="size-3" />,
         }
       ],
       image: "/kasir-digital.png",
@@ -446,16 +426,6 @@ export const DATA = {
       ],
       type: "n8n",
        links: [
-        {
-          type: "Website",
-          href: "",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "https://github.com/ajimaulana123/n8n-template/blob/main/auto%20post%20wordpress%20with%20telegram.json",
-          icon: <Icons.github className="size-3" />,
-        },
       ],
       image: "/n8n-wordperss.jpg",
       video: "",
@@ -477,12 +447,7 @@ export const DATA = {
           type: "Website",
           href: "https://karak-iota.vercel.app/",
           icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "https://github.com/ajimaulana123/karak",
-          icon: <Icons.github className="size-3" />,
-        },
+        }
       ],
       image: "/umkm.png",
       video: "",
@@ -504,12 +469,7 @@ export const DATA = {
           type: "Website",
           href: "https://official-hofe-website.vercel.app/",
           icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "https://github.com/ajimaulana123/official-HOFE-website",
-          icon: <Icons.github className="size-3" />,
-        },
+        }
       ],
       image: "/official-web-hofe.png",
       video: "",
@@ -531,19 +491,14 @@ export const DATA = {
           type: "Website",
           href: "https://ppid-solo.vercel.app/",
           icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "https://github.com/ajimaulana123/ppid-solo",
-          icon: <Icons.github className="size-3" />,
-        },
+        }
       ],
       image: "/ppid-solo.png",
       video: "",
     },
     {
       title: "System Management HRD",
-      href: "https://sim-hrd-pt-ppi.up.railway.app/",
+      href: "#",
       dates: "1 Februari - Present",
       active: true,
       description:
@@ -553,18 +508,13 @@ export const DATA = {
       ],
       type: "Web",
       links: [
-        {
-          type: "Website",
-          href: "https://sim-hrd-pt-ppi.up.railway.app/",
-          icon: <Icons.globe className="size-3" />,
-        },
       ],
       image: "/sim-hrd-pt-ppi.png",
       video: "",
     },
     {
       title: "Company Profile",
-      href: "https://company-profile-production-69d6.up.railway.app/",
+      href: "#",
       dates: "1 Februari - Present",
       active: true,
       description:
@@ -574,18 +524,13 @@ export const DATA = {
       ],
       type: "Web",
       links: [
-        {
-          type: "Website",
-          href: "https://company-profile-production-69d6.up.railway.app/",
-          icon: <Icons.globe className="size-3" />,
-        },
       ],
       image: "/company-profile-pt-ppi.png",
       video: "",
     },
     {
       title: "HOFE - Hoax Detection For Everyone",
-      href: "https://official-hofe-website.vercel.app/",
+      href: "#",
       dates: "November 2024 - Desember 2024",
       active: true,
       description:
@@ -602,16 +547,6 @@ export const DATA = {
       ],
       type: "Machine Learning",
       links: [
-        {
-          type: "Website",
-          href: "https://hofe-web-app-production.up.railway.app/login",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "https://github.com/ajimaulana123/hofe-web-app",
-          icon: <Icons.github className="size-3" />,
-        },
       ],
       image: "/hofe.png",
       video: "",
@@ -634,12 +569,7 @@ export const DATA = {
           type: "Website",
           href: "https://akreditasi-6c3jsmx6f-tamakuz.vercel.app/",
           icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "https://github.com/ajimaulana123/akreditasi-mi",
-          icon: <Icons.github className="size-3" />,
-        },
+        }
       ],
       image: "/akreditasi-mi.png",
       video: "",
@@ -661,12 +591,7 @@ export const DATA = {
           type: "Website",
           href: "https://media-editor-bay.vercel.app/",
           icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "https://github.com/ajimaulana123/media-editor",
-          icon: <Icons.github className="size-3" />,
-        },
+        }
       ],
       image: "/media-editor.png",
       video: "",
@@ -684,14 +609,13 @@ export const DATA = {
       ],
       type: "Web",
       links: [
-
       ],
       image: "/arsip-dokumen.png",
       video: "",
     },
     {
       title: "Sistem pencatatan slip gaji dokter",
-      href: "",
+      href: "https://finance-64nw.vercel.app/",
       dates: "Januari 2025",
       active: true,
       description:
@@ -703,7 +627,11 @@ export const DATA = {
       ],
       type: "Web",
       links: [
-
+         {
+          type: "Website",
+          href: "https://finance-64nw.vercel.app/",
+          icon: <Icons.globe className="size-3" />,
+        }
       ],
       image: "/sistem-pendapatan-dokter.png",
       video: "",
