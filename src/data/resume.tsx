@@ -16,8 +16,11 @@ export const DATA = {
   skills: [
     "n8n",
     "Next.js",
+    "React",
+    "TailwindCSS",
+    "Express.js",
+    "Laravel",
     "Tensorflow",
-    "Scikit-Learn",
     "Python"
   ],
   navbar: [
