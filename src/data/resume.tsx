@@ -79,6 +79,7 @@ export const DATA = {
     {
       company: "Freelance",
       badges: [],
+      href: "#",
       location: "Remote",
       title: "Automated Candidate Assessment",
       logoUrl: "",
@@ -90,6 +91,7 @@ export const DATA = {
     {
       company: "Freelance",
       badges: [],
+      href: "https://youtu.be/JrSkkdsUK-0?si=DhsbM4nBx5KjqdGz",
       location: "Remote",
       title: "E-commerce via Telegram",
       logoUrl: "",
@@ -98,9 +100,10 @@ export const DATA = {
       description:
         "Membangun, mengembangkan workflow n8n untuk Toko Online via Telegram.",
     },
-     {
+    {
       company: "Freelance",
       badges: [],
+      href: "#",
       location: "Remote",
       title: "Otomatisasi Post Content Blogger",
       logoUrl: "",
@@ -111,8 +114,8 @@ export const DATA = {
     },
     {
       company: "Freelance",
-      href: "https://sekull-inventory.vercel.app/",
       badges: [],
+      href: "https://sekull-inventory.vercel.app/",
       location: "Remote",
       title: "Inventory Sekolah",
       logoUrl: "",
@@ -124,6 +127,7 @@ export const DATA = {
     {
       company: "Freelance",
       badges: [],
+      href: "#",
       location: "Remote",
       title: "Otomatisasi Post Content Wordpress",
       logoUrl: "",
@@ -134,8 +138,8 @@ export const DATA = {
     },
     {
       company: "Freelance",
-      href: "https://meat-commerce-seven.vercel.app/",
       badges: [],
+      href: "https://meat-commerce-seven.vercel.app/",
       location: "Remote",
       title: "E-Comerce Daging",
       logoUrl: "",
@@ -146,8 +150,8 @@ export const DATA = {
     },
     {
       company: "Freelance",
-      href: "https://warung-digital-kasir-oom.vercel.app/",
       badges: [],
+      href: "https://warung-digital-kasir-oom.vercel.app/",
       location: "Remote",
       title: "Kasir Digital",
       logoUrl: "/kasir-digital.png",
@@ -158,8 +162,8 @@ export const DATA = {
     },
     {
       company: "Freelance",
-      href: "https://marble-theta.vercel.app/",
       badges: [],
+      href: "https://marble-theta.vercel.app/",
       location: "Remote",
       title: "Marbel",
       logoUrl: "",
@@ -170,8 +174,8 @@ export const DATA = {
     },
     {
       company: "Freelance",
-      href: "https://posyandu-9jko.vercel.app/",
       badges: [],
+      href: "https://posyandu-9jko.vercel.app/",
       location: "Remote",
       title: "Posyandu",
       logoUrl: "",
@@ -183,6 +187,7 @@ export const DATA = {
     {
       company: "PT. Prima Paper Indonesia",
       badges: [],
+      href: "#",
       location: "Hybrid",
       title: "Company Profile & System Management HRD",
       logoUrl: "https://bursakerja.jatengprov.go.id/assets/images/penyedias/PAS_44670f0fc6a813f4523459a71e81b885.jpg",
@@ -193,8 +198,8 @@ export const DATA = {
     },
     {
       company: "Akreditasi Kampus",
-      href: "https://akreditasi-6c3jsmx6f-tamakuz.vercel.app/",
       badges: [],
+      href: "https://akreditasi-6c3jsmx6f-tamakuz.vercel.app/",
       location: "On site",
       title: "Akreditasi Jurusan",
       logoUrl: "/mi.png",
@@ -253,6 +258,7 @@ export const DATA = {
   projects: [
     {
       title: "Automated Candidate Assessment",
+      href: "#",
       dates: "2 November - 20 Desember 2025",
       active: true,
       description:
@@ -269,6 +275,7 @@ export const DATA = {
     },
     {
       title: "E-commerce via Telegram",
+      href: "https://youtu.be/JrSkkdsUK-0?si=DhsbM4nBx5KjqdGz",
       dates: "1 Agustus - 1 September 2025",
       active: true,
       description:
@@ -290,6 +297,7 @@ export const DATA = {
     },
     {
       title: "Otomatisasi Post Content Blogger",
+      href: "#",
       dates: "1 Agustus - 2 Agustus 2025",
       active: true,
       description: "Dengan adanya otomatisasi ini, pelaku pemilik Blogger bisa posting content hanya bermodalkan upload foto thumbnail dan body kemudian peritah singkat isi text content dan secara otomaris content tersebut terbit diakun pemilik Blogger.",
@@ -415,7 +423,7 @@ export const DATA = {
     },
     {
       title: "Otomatisasi Post Content Wordpress",
-      href: "",
+      href: "#",
       dates: "1 Mei - 1 Juli 2025",
       active: true,
       description:
@@ -598,7 +606,7 @@ export const DATA = {
     },
     {
       title: "Sistem pencatatan arsip dokumen",
-      href: "",
+      href: "#",
       dates: "Januari 2025",
       active: true,
       description:
