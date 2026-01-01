@@ -25,7 +25,6 @@ export const DATA = {
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
-    { href: "/blog", icon: NotebookIcon, label: "Blog" },
   ],
   contact: {
     email: "aji658911@gmail.com",
@@ -49,24 +48,6 @@ export const DATA = {
         name: "Facebook",
         url: "https://www.facebook.com/profile.php?id=100051526432299&locale=id_ID",
         icon: Facebook,
-        navbar: true,
-      },
-      Instagram: {
-        name: "Instagram",
-        url: "https://www.instagram.com/ajimaulana_7/",
-        icon: Instagram,
-        navbar: true,
-      },
-      Threads: {
-        name: "Threads",
-        url: "https://www.threads.com/@ajimaulana_7",
-        icon: BsThreads,
-        navbar: true,
-      },
-      Youtube: {
-        name: "Youtube",
-        url: "https://www.youtube.com/@ajimaulana8721",
-        icon: Icons.youtube,
         navbar: true,
       },
       email: {
